@@ -32,4 +32,7 @@ public class Database {
     public PreparedStatement getPreparedStatement(String sql) throws SQLException{
         return conn.prepareStatement(sql);
     }
+    public Connection getConnection() {
+        return conn;
+    }
 }
